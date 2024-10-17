@@ -9,7 +9,7 @@ final class Logger {
     
     private static let defaultMessage = "Call here."
     
-    /// 커스텀 로깅 함수
+    /// 커스텀 로깅
     ///
     /// 로그 구성
     /// - 로깅 위치(로그를 찍는 함수)
