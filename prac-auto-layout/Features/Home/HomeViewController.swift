@@ -9,24 +9,26 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
-    private let viewModel = HomeViewModel()
-
+    lazy var viewModel: HomeViewModel = {
+        return HomeViewModel()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getViewModel().sideEffect = { [weak self] event in
+        getViewModel().sideEffect = { [weak self] sideEffect in
             guard let self else { return }
             
-            self.handleEffect(event)
+            self.handleSideEffect(sideEffect)
         }
     }
-
+    
     private func getViewModel() -> HomeViewModel {
         return viewModel
     }
-
-    private func handleEffect(_ event: HomeEvent) {
-        switch event {
+    
+    private func handleSideEffect(_ effect: HomeSideEffect) {
+        switch effect {
         case .logging:
             Logger.log()
         }

@@ -7,6 +7,13 @@
 
 final class HomeViewModel {
     
-    var sideEffect: ((HomeEvent) -> Void)?
+    var sideEffect: ((HomeSideEffect) -> Void)?
+    
+    func handleEvent(_ event: HomeEvent) {
+        switch event {
+        case .mock:
+            return
+        }
+    }
     
 }
