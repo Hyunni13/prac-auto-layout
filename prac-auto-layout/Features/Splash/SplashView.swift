@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct SplashView: View {
-    private let defaultText = "This is a SPLASH VIEW inside HomeViewController, a UIViewController in the UIKit framework."
+    private let defaultText = "This is a SPLASH VIEW(SwiftUI) inside HomeViewController(UIKit)."
     
     var body: some View {
-        VStack {
+        ZStack {
+            Color.blue
+            
             Text(defaultText)
                 .padding()
-                .background(Color.blue)
                 .foregroundColor(.white)
         }
-        .padding()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -5,7 +5,6 @@
 //  Created by James on 10/11/24.
 //
 
-import SwiftUI
 import UIKit
 
 final class HomeViewController: UIViewController {
@@ -23,32 +22,17 @@ final class HomeViewController: UIViewController {
     
     /// UI 그리기
     private func renderUI() {
-        // HomeViewController 하위에 SplashView 넣어주기
-        let splash = SplashView()
-        let splashHost = UIHostingController(rootView: splash)
-        addChild(splashHost)
-        view.addSubview(splashHost.view)
-        didMove(toParent: self)
+        let sampleView = UIView()
+        sampleView.backgroundColor = .yellow
         
-        // SafeArea
-        let safeArea = UIView()
-        safeArea.layer.borderWidth = 1
-        safeArea.layer.borderColor = UIColor.red.cgColor
-        splashHost.view.addSubview(safeArea)
+        view.addSubview(sampleView)
         
-        // Layout Constraints
-        splashHost.view.translatesAutoresizingMaskIntoConstraints = false
-        safeArea.translatesAutoresizingMaskIntoConstraints = false
+        sampleView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            splashHost.view.topAnchor.constraint(equalTo: view.topAnchor),
-            splashHost.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            splashHost.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            splashHost.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            
-            safeArea.topAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.topAnchor),
-            safeArea.bottomAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.bottomAnchor),
-            safeArea.leadingAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.leadingAnchor),
-            safeArea.trailingAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.trailingAnchor),
+            sampleView.topAnchor.constraint(equalTo: view.topAnchor),
+            sampleView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            sampleView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            sampleView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
     }
     
