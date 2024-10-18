@@ -17,7 +17,7 @@ final class SplashViewModel {
     var sideEffect: ((SplashSideEffect) -> Void)?
     
     init() {
-        // TEST: 5초 후에 Home으로 이동
+        // 2초 후에 Home으로 이동
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
             guard let self else { return }
             self.publishSideEffect(.moveHome)
