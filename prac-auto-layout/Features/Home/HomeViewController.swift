@@ -30,13 +30,25 @@ final class HomeViewController: UIViewController {
         view.addSubview(splashHost.view)
         didMove(toParent: self)
         
-        // SplashView 위치 잡기
+        // SafeArea
+        let safeArea = UIView()
+        safeArea.layer.borderWidth = 1
+        safeArea.layer.borderColor = UIColor.red.cgColor
+        splashHost.view.addSubview(safeArea)
+        
+        // Layout Constraints
         splashHost.view.translatesAutoresizingMaskIntoConstraints = false
+        safeArea.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             splashHost.view.topAnchor.constraint(equalTo: view.topAnchor),
             splashHost.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             splashHost.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             splashHost.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            safeArea.topAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.topAnchor),
+            safeArea.bottomAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.bottomAnchor),
+            safeArea.leadingAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.leadingAnchor),
+            safeArea.trailingAnchor.constraint(equalTo: splashHost.view.safeAreaLayoutGuide.trailingAnchor),
         ])
     }
     
