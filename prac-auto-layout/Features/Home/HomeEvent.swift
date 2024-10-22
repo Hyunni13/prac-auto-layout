@@ -2,9 +2,9 @@
 //  HomeEvent.swift
 //  prac-auto-layout
 //
-//  Created by James on 10/16/24.
+//  Created by James on 10/18/24.
 //
 
 enum HomeEvent {
-    case logging
+    case mock
 }
