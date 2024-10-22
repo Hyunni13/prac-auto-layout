@@ -8,28 +8,44 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
+        Logger.log()
+        
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
-        let splashHostViewController = SplashHostViewController()
+        let splashViewController = SplashViewController()
         
-        window.rootViewController = splashHostViewController
+        window.rootViewController = splashViewController
         window.makeKeyAndVisible()
         self.window = window
     }
-
-    func sceneDidDisconnect(_ scene: UIScene) { }
-
-    func sceneDidBecomeActive(_ scene: UIScene) { }
-
-    func sceneWillResignActive(_ scene: UIScene) { }
-
-    func sceneWillEnterForeground(_ scene: UIScene) { }
-
-    func sceneDidEnterBackground(_ scene: UIScene) { }
-
+    
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        Logger.log()
+    }
+    
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        Logger.log()
+    }
+    
+    func sceneWillResignActive(_ scene: UIScene) {
+        Logger.log()
+    }
+    
+    func sceneDidEnterBackground(_ scene: UIScene) {
+        Logger.log()
+    }
+    
+    func sceneDidDisconnect(_ scene: UIScene) {
+        Logger.log()
+    }
+    
 }

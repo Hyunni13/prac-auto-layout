@@ -6,30 +6,39 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08C1E1802CC7A2DA00B5C12F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */; };
+		08C1E1812CC7A2DA00B5C12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */; };
+		08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16C2CC7A2DA00B5C12F /* Logger.swift */; };
+		08C1E1832CC7A2DA00B5C12F /* HomeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */; };
+		08C1E1842CC7A2DA00B5C12F /* HomeSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */; };
+		08C1E1852CC7A2DA00B5C12F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */; };
+		08C1E1862CC7A2DA00B5C12F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */; };
+		08C1E1872CC7A2DA00B5C12F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1742CC7A2DA00B5C12F /* SplashView.swift */; };
+		08C1E1882CC7A2DA00B5C12F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */; };
+		08C1E1892CC7A2DA00B5C12F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1762CC7A2DA00B5C12F /* SplashViewModel.swift */; };
+		08C1E18A2CC7A2DA00B5C12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C1E17A2CC7A2DA00B5C12F /* LaunchScreen.storyboard */; };
+		08C1E18B2CC7A2DA00B5C12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C1E17D2CC7A2DA00B5C12F /* Assets.xcassets */; };
+		08C1E1912CC7A45800B5C12F /* SplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1902CC7A45800B5C12F /* SplashData.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		08B3A36A2CB9385B00C95BBC /* prac-auto-layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prac-auto-layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08C1E16C2CC7A2DA00B5C12F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEvent.swift; sourceTree = "<group>"; };
+		08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSideEffect.swift; sourceTree = "<group>"; };
+		08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		08C1E1742CC7A2DA00B5C12F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		08C1E1762CC7A2DA00B5C12F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		08C1E1792CC7A2DA00B5C12F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08C1E17D2CC7A2DA00B5C12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C1E17E2CC7A2DA00B5C12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C1E1902CC7A45800B5C12F /* SplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		08B3A37C2CB9385C00C95BBC /* Exceptions for "prac-auto-layout" folder in "prac-auto-layout" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 08B3A3692CB9385B00C95BBC /* prac-auto-layout */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		08B3A36C2CB9385B00C95BBC /* prac-auto-layout */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				08B3A37C2CB9385C00C95BBC /* Exceptions for "prac-auto-layout" folder in "prac-auto-layout" target */,
-			);
-			path = "prac-auto-layout";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		08B3A3672CB9385B00C95BBC /* Frameworks */ = {
@@ -45,7 +54,7 @@
 		08B3A3612CB9385B00C95BBC = {
 			isa = PBXGroup;
 			children = (
-				08B3A36C2CB9385B00C95BBC /* prac-auto-layout */,
+				08C1E17F2CC7A2DA00B5C12F /* prac-auto-layout */,
 				08B3A36B2CB9385B00C95BBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +65,115 @@
 				08B3A36A2CB9385B00C95BBC /* prac-auto-layout.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		08C1E16B2CC7A2DA00B5C12F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */,
+				08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		08C1E16D2CC7A2DA00B5C12F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E16C2CC7A2DA00B5C12F /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		08C1E16E2CC7A2DA00B5C12F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E16D2CC7A2DA00B5C12F /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		08C1E1732CC7A2DA00B5C12F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */,
+				08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */,
+				08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */,
+				08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08C1E1772CC7A2DA00B5C12F /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E18F2CC7A40700B5C12F /* Data */,
+				08C1E18E2CC7A35300B5C12F /* ViewModel */,
+				08C1E1742CC7A2DA00B5C12F /* SplashView.swift */,
+				08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		08C1E1782CC7A2DA00B5C12F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E1732CC7A2DA00B5C12F /* Home */,
+				08C1E1772CC7A2DA00B5C12F /* Splash */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		08C1E17B2CC7A2DA00B5C12F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E17A2CC7A2DA00B5C12F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		08C1E17C2CC7A2DA00B5C12F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E17B2CC7A2DA00B5C12F /* Storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		08C1E17F2CC7A2DA00B5C12F /* prac-auto-layout */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E16B2CC7A2DA00B5C12F /* App */,
+				08C1E1782CC7A2DA00B5C12F /* Features */,
+				08C1E16E2CC7A2DA00B5C12F /* Core */,
+				08C1E17C2CC7A2DA00B5C12F /* UI */,
+				08C1E18D2CC7A31600B5C12F /* Resources */,
+				08C1E17E2CC7A2DA00B5C12F /* Info.plist */,
+			);
+			path = "prac-auto-layout";
+			sourceTree = "<group>";
+		};
+		08C1E18D2CC7A31600B5C12F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E17D2CC7A2DA00B5C12F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08C1E18E2CC7A35300B5C12F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E1762CC7A2DA00B5C12F /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		08C1E18F2CC7A40700B5C12F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E1902CC7A45800B5C12F /* SplashData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +190,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				08B3A36C2CB9385B00C95BBC /* prac-auto-layout */,
 			);
 			name = "prac-auto-layout";
 			packageProductDependencies = (
@@ -122,6 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C1E18A2CC7A2DA00B5C12F /* LaunchScreen.storyboard in Resources */,
+				08C1E18B2CC7A2DA00B5C12F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +249,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C1E1802CC7A2DA00B5C12F /* AppDelegate.swift in Sources */,
+				08C1E1812CC7A2DA00B5C12F /* SceneDelegate.swift in Sources */,
+				08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */,
+				08C1E1832CC7A2DA00B5C12F /* HomeEvent.swift in Sources */,
+				08C1E1842CC7A2DA00B5C12F /* HomeSideEffect.swift in Sources */,
+				08C1E1912CC7A45800B5C12F /* SplashData.swift in Sources */,
+				08C1E1852CC7A2DA00B5C12F /* HomeViewController.swift in Sources */,
+				08C1E1862CC7A2DA00B5C12F /* HomeViewModel.swift in Sources */,
+				08C1E1872CC7A2DA00B5C12F /* SplashView.swift in Sources */,
+				08C1E1882CC7A2DA00B5C12F /* SplashViewController.swift in Sources */,
+				08C1E1892CC7A2DA00B5C12F /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08C1E17A2CC7A2DA00B5C12F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C1E1792CC7A2DA00B5C12F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		08B3A37E2CB9385C00C95BBC /* Debug */ = {
