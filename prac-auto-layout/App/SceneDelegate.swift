@@ -16,8 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        Logger.log()
-        
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
@@ -29,23 +27,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneWillEnterForeground(_ scene: UIScene) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
     func sceneDidBecomeActive(_ scene: UIScene) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
     func sceneWillResignActive(_ scene: UIScene) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
     func sceneDidEnterBackground(_ scene: UIScene) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
 }

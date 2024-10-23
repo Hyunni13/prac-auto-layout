@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SplashView: View {
-    private let defaultText = "This is a SPLASH VIEW(SwiftUI) inside HomeViewController(UIKit)."
+    private let defaultText = "This is a SPLASH VIEW(SwiftUI) hosted by a UIViewController(UIKit)."
     
     var body: some View {
         ZStack {

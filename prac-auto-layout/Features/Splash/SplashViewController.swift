@@ -8,44 +8,28 @@
 import SwiftUI
 import UIKit
 
-class SplashViewController: UIViewController {
+final class SplashViewController: BaseViewController {
     
-    private lazy var viewModel: SplashViewModel = {
+    lazy var viewModel: SplashViewModel = {
         return SplashViewModel()
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Logger.log()
-        
-        getViewModel().uiState = { [weak self] state in
-            guard let self = self else { return }
-            
-            self.handleUIState(state)
-        }
-        
-        getViewModel().sideEffect = { [weak self] effect in
-            guard let self = self else { return }
-            
-            self.handleSideEffect(effect)
-        }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        Logger.log()
-        
-        getViewModel().handleEvent(.initUI)
+    override func viewDidAppear(_ animated: Bool) {
+        getViewModel().handleEvent(SplashEvent.goHome)
     }
     
-    private func handleUIState(_ state: SplashUIState) {
-        Logger.log(state)
-        
+    override func initUI() {
         setupViews()
     }
     
-    private func handleSideEffect(_ effect: SplashSideEffect) {
-        Logger.log(effect)
+    override func handleState(_ state: any UIState) { }
+    
+    override func handleSideEffect(_ effect: any SideEffect) {
+        guard let effect = effect as? SplashSideEffect else { return }
         
         switch effect {
         case .goHome:
@@ -53,11 +37,8 @@ class SplashViewController: UIViewController {
         }
     }
     
-    private func goHome() {
-        let homeViewController = HomeViewController()
-        homeViewController.modalPresentationStyle = .fullScreen
-        
-        present(homeViewController, animated: true)
+    override func getViewModel() -> BaseViewModel {
+        return viewModel
     }
     
     private func setupViews() {
@@ -76,8 +57,11 @@ class SplashViewController: UIViewController {
         ])
     }
     
-    private func getViewModel() -> SplashViewModel {
-        return viewModel
+    private func goHome() {
+        let navigationController = UINavigationController(rootViewController: HomeViewController())
+        navigationController.modalPresentationStyle = .fullScreen
+        
+        present(navigationController, animated: true)
     }
     
 }

@@ -14,19 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        Logger.log()
-        
         return true
     }
     
-    // 이 친구는 언제 호출되나?
     func application(
         _ application: UIApplication,
         configurationForConnecting connectingSceneSession: UISceneSession,
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
-        Logger.log()
-        
         return UISceneConfiguration(
             name: "Default Configuration",
             sessionRole: connectingSceneSession.role)
@@ -36,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didDiscardSceneSessions sceneSessions: Set<UISceneSession>
     ) {
-        Logger.log()
+        Logger.log(type: .lifeCycle)
     }
     
 }

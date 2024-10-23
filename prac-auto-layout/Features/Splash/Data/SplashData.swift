@@ -5,14 +5,12 @@
 //  Created by James on 10/22/24.
 //
 
-enum SplashEvent {
-    case initUI
-}
-
-enum SplashSideEffect {
+enum SplashEvent: Event {
     case goHome
 }
 
-struct SplashUIState {
-    
+enum SplashSideEffect: SideEffect {
+    case goHome
 }
+
+struct SplashUIState: UIState { }

@@ -7,33 +7,18 @@
 
 import Foundation
 
-final class SplashViewModel {
+final class SplashViewModel: BaseViewModel {
     
-    var uiState: ((SplashUIState) -> Void)?
-    var sideEffect: ((SplashSideEffect) -> Void)?
-    
-    init() {
-        // 2초 후에 Home으로 이동
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-            guard let self = self else { return }
-            
-            self.publishSideEffect(.goHome)
-        }
-    }
-    
-    func handleEvent(_ event: SplashEvent) {
+    override func handleEvent(_ event: any Event) {
+        guard let event = event as? SplashEvent else { return }
+        
         switch event {
-        case .initUI:
-            publishUIState(SplashUIState())
+        case .goHome:
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+                guard let self = self else { return }
+                publishSideEffect(SplashSideEffect.goHome)
+            }
         }
-    }
-    
-    private func publishUIState(_ state: SplashUIState) {
-        uiState?(state)
-    }
-    
-    private func publishSideEffect(_ effect: SplashSideEffect) {
-        sideEffect?(effect)
     }
     
 }
