@@ -58,7 +58,10 @@ final class SplashViewController: BaseViewController {
     }
     
     private func goHome() {
-        let navigationController = UINavigationController(rootViewController: HomeViewController())
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HOME")
+        let navigationController = UINavigationController(rootViewController: homeViewController)
+        navigationController.navigationBar.isHidden = true
         navigationController.modalPresentationStyle = .fullScreen
         
         present(navigationController, animated: true)

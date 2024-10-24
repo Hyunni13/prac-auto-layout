@@ -12,7 +12,7 @@
         <!--Home View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="prac_auto_layout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HOME" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="prac_auto_layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,10 +31,10 @@
                                     <constraint firstAttribute="width" constant="30" id="pK1-Hk-hH0"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-nO-ce5" userLabel="accounts">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-nO-ce5" userLabel="accounts">
                                 <rect key="frame" x="20" y="129" width="353" height="669"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cix-tE-U4q" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cix-tE-U4q" userLabel="account">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tbl-at-Jpc" userLabel="bankImage">
@@ -71,13 +71,13 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="송금"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="tbl-at-Jpc" firstAttribute="leading" secondItem="cix-tE-U4q" secondAttribute="leading" id="2By-Yb-hWp"/>
                                             <constraint firstAttribute="trailing" secondItem="GUh-2A-Ebv" secondAttribute="trailing" id="5Gt-so-yPc"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-lC-5gl" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-lC-5gl" userLabel="account">
                                         <rect key="frame" x="0.0" y="68" width="353" height="57.666666666666657"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vcc-po-YGy" userLabel="bankImage">
@@ -120,7 +120,7 @@
                                             <constraint firstAttribute="trailing" secondItem="HqU-Zn-TCj" secondAttribute="trailing" id="Es4-5k-Qm4"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-ip-px1" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-ip-px1" userLabel="account">
                                         <rect key="frame" x="0.0" y="135.66666666666669" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t0m-eI-EgH" userLabel="bankImage">
@@ -163,7 +163,7 @@
                                             <constraint firstItem="t0m-eI-EgH" firstAttribute="leading" secondItem="C8S-ip-px1" secondAttribute="leading" id="Cfr-S8-kgm"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-P8-Bp3" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-P8-Bp3" userLabel="account">
                                         <rect key="frame" x="0.0" y="203.66666666666669" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ozL-22-YF3" userLabel="bankImage">
@@ -206,7 +206,7 @@
                                             <constraint firstAttribute="trailing" secondItem="nIU-r4-8yJ" secondAttribute="trailing" id="i5k-R9-Ajy"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWW-hB-mR0" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWW-hB-mR0" userLabel="account">
                                         <rect key="frame" x="0.0" y="271.66666666666669" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-Kc-Ywy" userLabel="bankImage">
@@ -249,7 +249,7 @@
                                             <constraint firstItem="cGv-Kc-Ywy" firstAttribute="leading" secondItem="KWW-hB-mR0" secondAttribute="leading" id="Y4x-JK-Brs"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UqO-Ju-IPt" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UqO-Ju-IPt" userLabel="account">
                                         <rect key="frame" x="0.0" y="339.66666666666669" width="353" height="57.666666666666686"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-8i-PDK" userLabel="bankImage">
@@ -292,7 +292,7 @@
                                             <constraint firstItem="ZBQ-8i-PDK" firstAttribute="leading" secondItem="UqO-Ju-IPt" secondAttribute="leading" id="NKc-eO-xOG"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mph-Y4-h6S" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mph-Y4-h6S" userLabel="account">
                                         <rect key="frame" x="0.0" y="407.33333333333337" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yp7-dF-mRx" userLabel="bankImage">
@@ -335,7 +335,7 @@
                                             <constraint firstItem="Yp7-dF-mRx" firstAttribute="leading" secondItem="mph-Y4-h6S" secondAttribute="leading" id="MvR-1D-Rc5"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-ci-KT9" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-ci-KT9" userLabel="account">
                                         <rect key="frame" x="0.0" y="475.33333333333337" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5t8-jY-Aws" userLabel="bankImage">
@@ -378,7 +378,7 @@
                                             <constraint firstAttribute="trailing" secondItem="c6t-YA-jgK" secondAttribute="trailing" id="wZw-dY-fIq"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-v4-oMu" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-v4-oMu" userLabel="account">
                                         <rect key="frame" x="0.0" y="543.33333333333337" width="353" height="57.666666666666629"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-K9-oTp" userLabel="bankImage">
@@ -421,7 +421,7 @@
                                             <constraint firstItem="H9E-K9-oTp" firstAttribute="leading" secondItem="HhO-v4-oMu" secondAttribute="leading" id="fAD-cn-Mty"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z3C-YO-Aw2" userLabel="account">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z3C-YO-Aw2" userLabel="account">
                                         <rect key="frame" x="0.0" y="611" width="353" height="58"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GDq-op-Ir9" userLabel="bankImage">
@@ -465,7 +465,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="C8S-ip-px1" firstAttribute="leading" secondItem="Ea0-nO-ce5" secondAttribute="leading" id="2UE-up-cgE"/>
                                     <constraint firstItem="Uoc-P8-Bp3" firstAttribute="leading" secondItem="Ea0-nO-ce5" secondAttribute="leading" id="3Yv-J1-1kp"/>
@@ -491,7 +491,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="Ea0-nO-ce5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="35h-6g-zZe"/>
                             <constraint firstItem="QNr-Vv-SL1" firstAttribute="top" secondItem="6mA-md-WcR" secondAttribute="top" id="BTI-Hn-kXd"/>
@@ -513,17 +513,14 @@
         <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="123"/>
         <image name="wonsign.bank.building.fill" catalog="system" width="128" height="112"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
