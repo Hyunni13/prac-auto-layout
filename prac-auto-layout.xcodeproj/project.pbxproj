@@ -10,10 +10,6 @@
 		08C1E1802CC7A2DA00B5C12F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */; };
 		08C1E1812CC7A2DA00B5C12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */; };
 		08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16C2CC7A2DA00B5C12F /* Logger.swift */; };
-		08C1E1832CC7A2DA00B5C12F /* HomeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */; };
-		08C1E1842CC7A2DA00B5C12F /* HomeSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */; };
-		08C1E1852CC7A2DA00B5C12F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */; };
-		08C1E1862CC7A2DA00B5C12F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */; };
 		08C1E1872CC7A2DA00B5C12F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1742CC7A2DA00B5C12F /* SplashView.swift */; };
 		08C1E1882CC7A2DA00B5C12F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */; };
 		08C1E1892CC7A2DA00B5C12F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1762CC7A2DA00B5C12F /* SplashViewModel.swift */; };
@@ -23,6 +19,8 @@
 		08C1E1942CC8CF1D00B5C12F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1932CC8CF1D00B5C12F /* BaseViewController.swift */; };
 		08C1E1962CC8CF4C00B5C12F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1952CC8CF4C00B5C12F /* BaseViewModel.swift */; };
 		08C1E1982CC8CF7C00B5C12F /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1972CC8CF7C00B5C12F /* BaseData.swift */; };
+		08C1E19B2CCA89C800B5C12F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C1E19A2CCA89C800B5C12F /* Home.storyboard */; };
+		08C1E19D2CCA89EB00B5C12F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +28,6 @@
 		08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08C1E16C2CC7A2DA00B5C12F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEvent.swift; sourceTree = "<group>"; };
-		08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSideEffect.swift; sourceTree = "<group>"; };
-		08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		08C1E1742CC7A2DA00B5C12F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		08C1E1762CC7A2DA00B5C12F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
@@ -44,6 +38,8 @@
 		08C1E1932CC8CF1D00B5C12F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		08C1E1952CC8CF4C00B5C12F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		08C1E1972CC8CF7C00B5C12F /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
+		08C1E19A2CCA89C800B5C12F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +98,8 @@
 		08C1E1732CC7A2DA00B5C12F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				08C1E16F2CC7A2DA00B5C12F /* HomeEvent.swift */,
-				08C1E1702CC7A2DA00B5C12F /* HomeSideEffect.swift */,
-				08C1E1712CC7A2DA00B5C12F /* HomeViewController.swift */,
-				08C1E1722CC7A2DA00B5C12F /* HomeViewModel.swift */,
+				08C1E1992CCA898200B5C12F /* Storyboard */,
+				08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,6 +179,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		08C1E1992CCA898200B5C12F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				08C1E19A2CCA89C800B5C12F /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C1E19B2CCA89C800B5C12F /* Home.storyboard in Resources */,
 				08C1E18A2CC7A2DA00B5C12F /* LaunchScreen.storyboard in Resources */,
 				08C1E18B2CC7A2DA00B5C12F /* Assets.xcassets in Resources */,
 			);
@@ -262,13 +265,10 @@
 				08C1E1802CC7A2DA00B5C12F /* AppDelegate.swift in Sources */,
 				08C1E1812CC7A2DA00B5C12F /* SceneDelegate.swift in Sources */,
 				08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */,
-				08C1E1832CC7A2DA00B5C12F /* HomeEvent.swift in Sources */,
-				08C1E1842CC7A2DA00B5C12F /* HomeSideEffect.swift in Sources */,
 				08C1E1942CC8CF1D00B5C12F /* BaseViewController.swift in Sources */,
 				08C1E1912CC7A45800B5C12F /* SplashData.swift in Sources */,
 				08C1E1962CC8CF4C00B5C12F /* BaseViewModel.swift in Sources */,
-				08C1E1852CC7A2DA00B5C12F /* HomeViewController.swift in Sources */,
-				08C1E1862CC7A2DA00B5C12F /* HomeViewModel.swift in Sources */,
+				08C1E19D2CCA89EB00B5C12F /* HomeViewController.swift in Sources */,
 				08C1E1872CC7A2DA00B5C12F /* SplashView.swift in Sources */,
 				08C1E1882CC7A2DA00B5C12F /* SplashViewController.swift in Sources */,
 				08C1E1892CC7A2DA00B5C12F /* SplashViewModel.swift in Sources */,
