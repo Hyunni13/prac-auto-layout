@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         let icon = UIImageView(image: UIImage(systemName: "bell.fill"))
         icon.translatesAutoresizingMaskIntoConstraints = false
         icon.contentMode = .scaleAspectFit
-        icon.tintColor = .appBlue
+        icon.tintColor = .appGray
         return icon
     }()
     
@@ -22,16 +22,21 @@ class HomeViewController: UIViewController {
     private lazy var stackView: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.isLayoutMarginsRelativeArrangement = true
+        
         stack.axis = .vertical
         stack.distribution = .fillEqually
         stack.alignment = .fill
-        stack.spacing = 10
+        stack.spacing = 15
+        stack.backgroundColor = .appBackgroundSection
+        stack.layer.cornerRadius = 15
+        stack.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         return stack
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.appBackground
+        view.backgroundColor = .appBackground
         
         (0..<10).forEach { _ in
             stackView.addArrangedSubview(AccountView())
@@ -59,9 +64,6 @@ class HomeViewController: UIViewController {
     private func pinStackView() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: notificationIcon.bottomAnchor, constant: 20),
-            stackView.bottomAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.bottomAnchor,
-                constant: -20),
             stackView.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                 constant: 20),

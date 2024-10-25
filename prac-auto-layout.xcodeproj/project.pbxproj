@@ -112,6 +112,7 @@
 		08C1E1772CC7A2DA00B5C12F /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				08C1E17B2CC7A2DA00B5C12F /* Storyboard */,
 				08C1E18F2CC7A40700B5C12F /* Data */,
 				08C1E18E2CC7A35300B5C12F /* ViewModel */,
 				08C1E1742CC7A2DA00B5C12F /* SplashView.swift */,
@@ -140,7 +141,6 @@
 		08C1E17C2CC7A2DA00B5C12F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				08C1E17B2CC7A2DA00B5C12F /* Storyboard */,
 				08C1E1932CC8CF1D00B5C12F /* BaseViewController.swift */,
 				08C1E1952CC8CF4C00B5C12F /* BaseViewModel.swift */,
 				08C1E1972CC8CF7C00B5C12F /* BaseData.swift */,

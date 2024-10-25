@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct SplashView: View {
-    private let defaultText = "This is a SPLASH VIEW(SwiftUI) hosted by a UIViewController(UIKit)."
-    
     var body: some View {
         ZStack {
             Color.appBlue
             
-            Text(defaultText)
-                .padding()
-                .foregroundColor(.white)
+            Image(systemName: "wallet.bifold.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.appWhite)
         }
         .edgesIgnoringSafeArea(.all)
     }
