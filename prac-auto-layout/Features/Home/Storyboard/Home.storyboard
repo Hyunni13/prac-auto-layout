@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -9,43 +9,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="HOME" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="prac_auto_layout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wonsign.bank.building.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6mA-md-WcR" userLabel="brandImage">
-                                <rect key="frame" x="20" y="79.333333333333329" width="30" height="29.666666666666671"/>
+                                <rect key="frame" x="20" y="82.333333333333329" width="30" height="29.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="G7S-np-CF6"/>
                                     <constraint firstAttribute="height" constant="30" id="q2A-J0-nIW"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-Vv-SL1" userLabel="notificationIcon">
-                                <rect key="frame" x="343" y="79.333333333333329" width="30" height="29.333333333333329"/>
+                                <rect key="frame" x="352" y="82.333333333333329" width="30" height="29.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="781-g9-Jcx"/>
                                     <constraint firstAttribute="width" constant="30" id="pK1-Hk-hH0"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-nO-ce5" userLabel="accounts">
-                                <rect key="frame" x="20" y="129" width="353" height="669"/>
+                                <rect key="frame" x="20" y="132" width="362" height="688"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cix-tE-U4q" userLabel="account">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="59.666666666666664"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tbl-at-Jpc" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="EFK-X8-DgP"/>
                                                     <constraint firstAttribute="width" constant="30" id="uct-KM-mzF"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aan-dQ-AfS" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333428" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333428" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqI-wk-L6e">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -63,7 +63,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUh-2A-Ebv" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666657" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666657" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="wbS-UJ-Gbu"/>
                                                 </constraints>
@@ -78,17 +78,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-lC-5gl" userLabel="account">
-                                        <rect key="frame" x="0.0" y="68" width="353" height="57.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="69.666666666666657" width="362" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vcc-po-YGy" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="2W7-8L-6I6"/>
                                                     <constraint firstAttribute="height" constant="30" id="Rx2-ri-j5j"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4hJ-vU-20P" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333428" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333428" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXJ-cN-s7o">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -106,7 +106,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqU-Zn-TCj" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666657" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="13" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="JIX-cR-bM2"/>
                                                 </constraints>
@@ -121,17 +121,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-ip-px1" userLabel="account">
-                                        <rect key="frame" x="0.0" y="135.66666666666669" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="139.66666666666669" width="362" height="59.666666666666657"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t0m-eI-EgH" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="8QP-AO-Qlw"/>
                                                     <constraint firstAttribute="height" constant="30" id="EVq-st-70J"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ErM-k3-ilN" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333144" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333144" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4J-R5-1pl">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -149,7 +149,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brN-N6-Yyh" userLabel="button">
-                                                <rect key="frame" x="293" y="12" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666629" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="xrM-Au-LpB"/>
                                                 </constraints>
@@ -164,17 +164,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-P8-Bp3" userLabel="account">
-                                        <rect key="frame" x="0.0" y="203.66666666666669" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="209.33333333333331" width="362" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ozL-22-YF3" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ESs-C8-ATm"/>
                                                     <constraint firstAttribute="width" constant="30" id="a7y-rc-VLS"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v8u-RQ-NzY" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333144" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333712" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0f-2s-sDS">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -192,7 +192,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-r4-8yJ" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666629" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666686" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="5qJ-lH-eya"/>
                                                 </constraints>
@@ -207,17 +207,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWW-hB-mR0" userLabel="account">
-                                        <rect key="frame" x="0.0" y="271.66666666666669" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="279.33333333333331" width="362" height="59.666666666666686"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-Kc-Ywy" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.333333333333352" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="X4x-DA-ko2"/>
                                                     <constraint firstAttribute="height" constant="30" id="mVY-fu-cKy"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IRu-NF-vWp" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333144" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L5-TP-XYh">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -235,7 +235,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-xt-JEX" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666629" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666686" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="pYh-XR-5C6"/>
                                                 </constraints>
@@ -250,17 +250,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UqO-Ju-IPt" userLabel="account">
-                                        <rect key="frame" x="0.0" y="339.66666666666669" width="353" height="57.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="349" width="362" height="59.666666666666686"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-8i-PDK" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.333333333333295" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="qj1-FB-YmL"/>
                                                     <constraint firstAttribute="width" constant="30" id="wgM-fh-kLc"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8hP-nZ-0om" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333144" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jim-li-mOq">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -269,7 +269,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계좌명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiR-NL-TLz">
-                                                        <rect key="frame" x="0.0" y="29" width="44.333333333333336" height="20.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="29.000000000000057" width="44.333333333333336" height="20.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -278,7 +278,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJV-my-Uq4" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666629" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666686" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="IAy-FS-2LO"/>
                                                 </constraints>
@@ -293,17 +293,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mph-Y4-h6S" userLabel="account">
-                                        <rect key="frame" x="0.0" y="407.33333333333337" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="418.66666666666663" width="362" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yp7-dF-mRx" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="fM6-Xe-Scr"/>
                                                     <constraint firstAttribute="height" constant="30" id="zLG-ml-ajj"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TBp-Az-EoQ" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333332575" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333712" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rho-pa-OuQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -321,7 +321,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-9q-xRO" userLabel="button">
-                                                <rect key="frame" x="293" y="12" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="13" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="Ign-CG-6P7"/>
                                                 </constraints>
@@ -336,17 +336,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-ci-KT9" userLabel="account">
-                                        <rect key="frame" x="0.0" y="475.33333333333337" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="488.66666666666669" width="362" height="59.666666666666686"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5t8-jY-Aws" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="h7E-zr-Cw5"/>
                                                     <constraint firstAttribute="width" constant="30" id="s9N-lB-tUL"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="00S-Th-SZQ" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333332575" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333333712" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb2-RL-P7a">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -364,7 +364,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-YA-jgK" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666629" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666742" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="m3m-Id-IxI"/>
                                                 </constraints>
@@ -379,17 +379,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-v4-oMu" userLabel="account">
-                                        <rect key="frame" x="0.0" y="543.33333333333337" width="353" height="57.666666666666629"/>
+                                        <rect key="frame" x="0.0" y="558.33333333333337" width="362" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-K9-oTp" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.333333333333295" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="52T-6G-Ax6"/>
                                                     <constraint firstAttribute="height" constant="30" id="NEH-AN-bb2"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jp8-d2-f3q" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5.3333333333332575" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL2-KP-Oya">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -407,7 +407,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-Hk-zS2" userLabel="button">
-                                                <rect key="frame" x="293" y="11.666666666666629" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666629" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="Mb1-Wj-izJ"/>
                                                 </constraints>
@@ -422,17 +422,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z3C-YO-Aw2" userLabel="account">
-                                        <rect key="frame" x="0.0" y="611" width="353" height="58"/>
+                                        <rect key="frame" x="0.0" y="628.33333333333337" width="362" height="59.666666666666629"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GDq-op-Ir9" userLabel="bankImage">
-                                                <rect key="frame" x="0.0" y="14.666666666666666" width="30" height="28.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="15.333333333333295" width="30" height="28.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="Z5p-UO-Rvc"/>
                                                     <constraint firstAttribute="height" constant="30" id="ZUB-VN-WWp"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l9Q-HL-tPk" userLabel="accountInfo">
-                                                <rect key="frame" x="40" y="4.3333333333333712" width="243" height="49.333333333333336"/>
+                                                <rect key="frame" x="40" y="5" width="252" height="49.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300,000,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehf-2y-WzT">
                                                         <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="24"/>
@@ -450,7 +450,7 @@
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYJ-mw-9yA" userLabel="button">
-                                                <rect key="frame" x="293" y="12" width="60" height="34.333333333333336"/>
+                                                <rect key="frame" x="302" y="12.666666666666629" width="60" height="34.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="FYU-jm-dy1"/>
                                                 </constraints>
