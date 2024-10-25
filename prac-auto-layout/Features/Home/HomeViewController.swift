@@ -2,58 +2,75 @@
 //  HomeViewController.swift
 //  prac-auto-layout
 //
-//  Created by James on 10/11/24.
+//  Created by James on 10/24/24.
 //
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+class HomeViewController: UIViewController {
     
-    lazy var viewModel: HomeViewModel = {
-        return HomeViewModel()
+    // Notification Icon
+    private lazy var notificationIcon: UIImageView = {
+        let icon = UIImageView(image: UIImage(systemName: "bell.fill"))
+        icon.translatesAutoresizingMaskIntoConstraints = false
+        icon.contentMode = .scaleAspectFit
+        icon.tintColor = .appGray
+        return icon
+    }()
+    
+    // StackView
+    private lazy var stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.isLayoutMarginsRelativeArrangement = true
+        
+        stack.axis = .vertical
+        stack.distribution = .fillEqually
+        stack.alignment = .fill
+        stack.spacing = 15
+        stack.backgroundColor = .appBackgroundSection
+        stack.layer.cornerRadius = 15
+        stack.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return stack
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .appBackground
         
-        renderUI()
-        bindViewModel()
+        (0..<10).forEach { _ in
+            stackView.addArrangedSubview(AccountView())
+        }
+        
+        view.addSubview(notificationIcon)
+        view.addSubview(stackView)
+        pinNotificationIcon()
+        pinStackView()
     }
     
-    /// UI 그리기
-    private func renderUI() {
-        let sampleView = UIView()
-        sampleView.backgroundColor = .yellow
-        
-        view.addSubview(sampleView)
-        
-        sampleView.translatesAutoresizingMaskIntoConstraints = false
+    private func pinNotificationIcon() {
         NSLayoutConstraint.activate([
-            sampleView.topAnchor.constraint(equalTo: view.topAnchor),
-            sampleView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            sampleView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            sampleView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            notificationIcon.topAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.topAnchor,
+                constant: 20),
+            notificationIcon.trailingAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                constant: -20),
+            notificationIcon.widthAnchor.constraint(equalToConstant: 24),
+            notificationIcon.heightAnchor.constraint(equalToConstant: 24),
         ])
     }
     
-    /// ViewModel 연동
-    private func bindViewModel() {
-        getViewModel().sideEffect = { [weak self] sideEffect in
-            guard let self else { return }
-            
-            self.handleSideEffect(sideEffect)
-        }
-    }
-    
-    private func getViewModel() -> HomeViewModel {
-        return viewModel
-    }
-    
-    private func handleSideEffect(_ effect: HomeSideEffect) {
-        switch effect {
-        case .logging:
-            Logger.log()
-        }
+    private func pinStackView() {
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: notificationIcon.bottomAnchor, constant: 20),
+            stackView.leadingAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                constant: 20),
+            stackView.trailingAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                constant: -20),
+        ])
     }
     
 }

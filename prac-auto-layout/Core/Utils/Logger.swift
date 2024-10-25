@@ -7,15 +7,28 @@
 
 final class Logger {
     
-    private static let defaultMessage = "Call here."
+    enum Log: String {
+        case lifeCycle = "🛟"
+        case others = "📌"
+    }
     
     /// 커스텀 로깅
-    ///
-    /// 로그 구성
-    /// - 로깅 위치(로그를 찍는 함수)
-    /// - 로그 메시지
-    static func log(_ message: String = defaultMessage, function: String = #function) {
-        print(function, message)
+    static func log(
+        _ message: Any? = "Touch here.",
+        type: Log = .others,
+        filePath: String = #fileID,
+        function: String = #function
+    ) {
+        let fileName = extractName(from: filePath)
+        
+        print("""
+        \(type.rawValue) \(fileName) > \(function)
+        ⎿ message: \(message ?? "nil")
+        """)
+    }
+    
+    private static func extractName(from filePath: String) -> String {
+        return String(filePath.split(separator: "/")[1])
     }
     
 }
