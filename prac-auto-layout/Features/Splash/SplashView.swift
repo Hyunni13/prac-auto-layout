@@ -12,7 +12,7 @@ struct SplashView: View {
     
     var body: some View {
         ZStack {
-            Color.blue
+            Color.appBlue
             
             Text(defaultText)
                 .padding()

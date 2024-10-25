@@ -22,6 +22,7 @@
 		08C1E19B2CCA89C800B5C12F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C1E19A2CCA89C800B5C12F /* Home.storyboard */; };
 		08C1E19D2CCA89EB00B5C12F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */; };
 		08C1E1A02CCBAF0A00B5C12F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E19F2CCBAF0A00B5C12F /* AccountView.swift */; };
+		08C1E1A22CCBF01F00B5C12F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C1E1A12CCBF01F00B5C12F /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		08C1E19A2CCA89C800B5C12F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		08C1E19F2CCBAF0A00B5C12F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		08C1E1A12CCBF01F00B5C12F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				08C1E1992CCA898200B5C12F /* Storyboard */,
+				08C1E19E2CCBAED400B5C12F /* Components */,
 				08C1E19C2CCA89EB00B5C12F /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -161,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				08C1E17D2CC7A2DA00B5C12F /* Assets.xcassets */,
+				08C1E1A12CCBF01F00B5C12F /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,7 +188,6 @@
 		08C1E1992CCA898200B5C12F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				08C1E19E2CCBAED400B5C12F /* Components */,
 				08C1E19A2CCA89C800B5C12F /* Home.storyboard */,
 			);
 			path = Storyboard;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C1E19B2CCA89C800B5C12F /* Home.storyboard in Resources */,
+				08C1E1A22CCBF01F00B5C12F /* Colors.xcassets in Resources */,
 				08C1E18A2CC7A2DA00B5C12F /* LaunchScreen.storyboard in Resources */,
 				08C1E18B2CC7A2DA00B5C12F /* Assets.xcassets in Resources */,
 			);
