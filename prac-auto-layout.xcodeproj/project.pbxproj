@@ -109,7 +109,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		08C1E1772CC7A2DA00B5C12F /* Splash */ = {
+		08C1E1772CC7A2DA00B5C12F /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				08C1E17B2CC7A2DA00B5C12F /* Storyboard */,
@@ -118,14 +118,14 @@
 				08C1E1742CC7A2DA00B5C12F /* SplashView.swift */,
 				08C1E1752CC7A2DA00B5C12F /* SplashViewController.swift */,
 			);
-			path = Splash;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		08C1E1782CC7A2DA00B5C12F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				08C1E1772CC7A2DA00B5C12F /* Launch */,
 				08C1E1732CC7A2DA00B5C12F /* Home */,
-				08C1E1772CC7A2DA00B5C12F /* Splash */,
 			);
 			path = Features;
 			sourceTree = "<group>";
