@@ -8,9 +8,10 @@
 struct LaunchState: State {
     enum Destination {
         case home
+        case none
     }
     
-    var destination: Destination?
+    var destination: Destination = .home
 }
 
 enum LaunchAction: Action {

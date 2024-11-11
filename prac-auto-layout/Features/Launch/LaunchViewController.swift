@@ -19,7 +19,7 @@ final class LaunchViewController: BaseViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        getViewModel().reduce(viewModel.getState(), action: LaunchAction.goHomeView)
+        getViewModel().reduce(action: LaunchAction.goHomeView)
     }
     
     override func initUI() {
@@ -38,11 +38,11 @@ final class LaunchViewController: BaseViewController {
     // MARK: STATE HANDLING
     private func handleState(_ state: LaunchState) {
         // 내비게이션 확인
-        if let destination = state.destination {
-            switch destination {
-            case .home:
-                goHomeView()
-            }
+        switch state.destination {
+        case .home:
+            goHomeView()
+        case .none:
+            return
         }
     }
     

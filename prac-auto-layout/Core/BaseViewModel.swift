@@ -9,7 +9,7 @@ class BaseViewModel {
     
     var publish: ((any State) -> Void)?
     
-    func reduce(_ oldState: any State, action: any Action) {
+    func reduce(action: any Action) {
         fatalError("This method must be overridden.")
     }
     

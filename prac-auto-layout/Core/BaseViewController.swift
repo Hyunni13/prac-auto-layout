@@ -16,7 +16,7 @@ class BaseViewController: UIViewController {
         
         getViewModel().publish = { [weak self] state in
             guard let self = self else { return }
-            subscribe(state)
+            self.subscribe(state)
         }
     }
     
@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
         fatalError("This method must be overridden.")
     }
     
-    func subscribe(_ state: any State) {
+    func subscribe(_ newState: any State) {
         fatalError("This method must be overridden.")
     }
     
