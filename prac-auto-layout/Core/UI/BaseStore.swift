@@ -5,8 +5,6 @@
 //  Created by James on 10/23/24.
 //
 
-protocol Event { }
+protocol State { }
 
-protocol UIState { }
-
-protocol SideEffect { }
+protocol Action { }

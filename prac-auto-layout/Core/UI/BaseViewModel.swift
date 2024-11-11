@@ -6,20 +6,11 @@
 //
 
 class BaseViewModel {
-
-    var uiState: ((any UIState) -> Void)?
-    var sideEffect: ((any SideEffect) -> Void)?
     
-    func handleEvent(_ event: any Event) {
-        fatalError("This function must be overridden.")
-    }
+    var publish: ((any State) -> Void)?
     
-    func publishUIState(_ state: any UIState) {
-        uiState?(state)
-    }
-    
-    func publishSideEffect(_ effect: any SideEffect) {
-        sideEffect?(effect)
+    func reduce(_ state: any State, _ action: any Action) -> State {
+        fatalError("This method must be overridden.")
     }
     
 }

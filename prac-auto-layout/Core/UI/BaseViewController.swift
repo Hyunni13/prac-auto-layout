@@ -14,33 +14,23 @@ class BaseViewController: UIViewController {
         
         initUI()
         
-        getViewModel().uiState = { [weak self] state in
+        getViewModel().publish = { [weak self] state in
             guard let self = self else { return }
             
-            handleState(state)
-        }
-        
-        getViewModel().sideEffect = { [weak self] effect in
-            guard let self = self else { return }
-            
-            handleSideEffect(effect)
+            subscribe(state)
         }
     }
     
     func initUI() {
-        fatalError("This function must be overridden.")
+        fatalError("This method must be overridden.")
     }
     
-    func handleState(_ state: any UIState) {
-        fatalError("This function must be overridden.")
-    }
-    
-    func handleSideEffect(_ effect: any SideEffect) {
-        fatalError("This function must be overridden.")
+    func subscribe(_ state: any State) {
+        fatalError("This method must be overridden.")
     }
     
     func getViewModel() -> BaseViewModel {
-        fatalError("This function must be overridden.")
+        fatalError("This method must be overridden.")
     }
     
 }

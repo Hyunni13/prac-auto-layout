@@ -58,8 +58,8 @@ final class SplashViewController: BaseViewController {
     }
     
     private func goHome() {
-//        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-//        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HOME")
+        //        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        //        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HOME")
         let homeViewController = HomeViewController()
         let navigationController = UINavigationController(rootViewController: homeViewController)
         navigationController.navigationBar.isHidden = true
