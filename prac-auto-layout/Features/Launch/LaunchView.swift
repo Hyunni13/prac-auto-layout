@@ -1,5 +1,5 @@
 //
-//  SplashView.swift
+//  LaunchView.swift
 //  prac-auto-layout
 //
 //  Created by James on 10/18/24.

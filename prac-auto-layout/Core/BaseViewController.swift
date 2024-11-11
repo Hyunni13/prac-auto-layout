@@ -16,7 +16,6 @@ class BaseViewController: UIViewController {
         
         getViewModel().publish = { [weak self] state in
             guard let self = self else { return }
-            
             subscribe(state)
         }
     }

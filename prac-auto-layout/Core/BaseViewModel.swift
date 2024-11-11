@@ -9,23 +9,11 @@ class BaseViewModel {
     
     var publish: ((any State) -> Void)?
     
-    init() {
-        getEnvironment().publish = { [weak self] effect in
-            guard let self = self else { return }
-            
-            subscribeEffect(effect)
-        }
-    }
-    
-    func reduce(_ state: any State, _ action: any Action) {
+    func reduce(_ oldState: any State, action: any Action) {
         fatalError("This method must be overridden.")
     }
     
-    func subscribeEffect(_ effect: any Effect) {
-        fatalError("This method must be overridden.")
-    }
-    
-    func getEnvironment() -> BaseEnvironment {
+    func getState() -> any State {
         fatalError("This method must be overridden.")
     }
     

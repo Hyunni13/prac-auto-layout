@@ -21,8 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         window.backgroundColor = UIColor.customBlue
         
-        let splashViewController = SplashViewController()
-        window.rootViewController = splashViewController
+        let launchViewController = LaunchViewController()
+        window.rootViewController = launchViewController
         window.makeKeyAndVisible()
         
         self.window = window
