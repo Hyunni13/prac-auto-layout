@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08ACA5B62CE1C92200F0C0B9 /* BaseEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACA5B52CE1C92200F0C0B9 /* BaseEnvironment.swift */; };
 		08C1E1802CC7A2DA00B5C12F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */; };
 		08C1E1812CC7A2DA00B5C12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */; };
 		08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1E16C2CC7A2DA00B5C12F /* Logger.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08ACA5B52CE1C92200F0C0B9 /* BaseEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEnvironment.swift; sourceTree = "<group>"; };
 		08B3A36A2CB9385B00C95BBC /* prac-auto-layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prac-auto-layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C1E1692CC7A2DA00B5C12F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C1E16A2CC7A2DA00B5C12F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +95,10 @@
 		08C1E16E2CC7A2DA00B5C12F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				08C1E17C2CC7A2DA00B5C12F /* UI */,
+				08C1E1932CC8CF1D00B5C12F /* BaseViewController.swift */,
+				08C1E1952CC8CF4C00B5C12F /* BaseViewModel.swift */,
+				08ACA5B52CE1C92200F0C0B9 /* BaseEnvironment.swift */,
+				08C1E1972CC8CF7C00B5C12F /* BaseStore.swift */,
 				08C1E16D2CC7A2DA00B5C12F /* Utils */,
 			);
 			path = Core;
@@ -136,16 +141,6 @@
 				08C1E17A2CC7A2DA00B5C12F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		08C1E17C2CC7A2DA00B5C12F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				08C1E1932CC8CF1D00B5C12F /* BaseViewController.swift */,
-				08C1E1952CC8CF4C00B5C12F /* BaseViewModel.swift */,
-				08C1E1972CC8CF7C00B5C12F /* BaseStore.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		08C1E17F2CC7A2DA00B5C12F /* prac-auto-layout */ = {
@@ -283,6 +278,7 @@
 				08C1E1822CC7A2DA00B5C12F /* Logger.swift in Sources */,
 				08C1E1942CC8CF1D00B5C12F /* BaseViewController.swift in Sources */,
 				08C1E1912CC7A45800B5C12F /* SplashData.swift in Sources */,
+				08ACA5B62CE1C92200F0C0B9 /* BaseEnvironment.swift in Sources */,
 				08C1E1962CC8CF4C00B5C12F /* BaseViewModel.swift in Sources */,
 				08C1E19D2CCA89EB00B5C12F /* HomeViewController.swift in Sources */,
 				08C1E1872CC7A2DA00B5C12F /* SplashView.swift in Sources */,

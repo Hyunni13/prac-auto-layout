@@ -8,3 +8,5 @@
 protocol State { }
 
 protocol Action { }
+
+protocol Effect { }
