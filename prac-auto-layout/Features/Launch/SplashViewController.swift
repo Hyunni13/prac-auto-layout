@@ -42,7 +42,7 @@ final class SplashViewController: BaseViewController {
     }
     
     private func setupViews() {
-        let splash = SplashView()
+        let splash = LaunchView()
         let splashHost = UIHostingController(rootView: splash)
         addChild(splashHost)
         view.addSubview(splashHost.view)

@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct SplashView: View {
+struct LaunchView: View {
     var body: some View {
         ZStack {
-            Color.appBlue
+            Color.customBlue
             
-            Image(systemName: "wallet.bifold.fill")
+            Image(systemName: "car.fill")
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
-                .foregroundColor(.appWhite)
+                .foregroundColor(Color.customWhite)
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -23,5 +24,5 @@ struct SplashView: View {
 
 
 #Preview {
-    SplashView()
+    LaunchView()
 }
