@@ -41,8 +41,6 @@ final class LaunchViewController: BaseViewController {
         switch state.destination {
         case .home:
             goHomeView()
-        case .none:
-            return
         }
     }
     
@@ -72,6 +70,7 @@ extension LaunchViewController {
         let navigationController = UINavigationController(rootViewController: homeViewController)
         navigationController.navigationBar.isHidden = true
         navigationController.modalPresentationStyle = .fullScreen
+        navigationController.modalTransitionStyle = .crossDissolve
         
         present(navigationController, animated: true)
     }
