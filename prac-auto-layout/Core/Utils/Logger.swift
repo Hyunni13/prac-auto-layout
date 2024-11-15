@@ -12,17 +12,21 @@ final class Logger {
         case others = "📌"
     }
     
-    /// 커스텀 로깅
+    /**
+     커스텀 로깅
+     
+     - Parameters message: 커스텀 로깅 내용
+     */
     static func log(
-        _ message: Any? = "Touch here.",
+        _ message: Any? = nil,
         type: Log = .others,
         filePath: String = #fileID,
-        function: String = #function
+        functionName: String = #function
     ) {
         let fileName = extractName(from: filePath)
         
         print("""
-        \(type.rawValue) \(fileName) > \(function)
+        \(type.rawValue) \(fileName) > \(functionName)
         ⎿ message: \(message ?? "nil")
         """)
     }
